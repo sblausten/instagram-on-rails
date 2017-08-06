@@ -1,24 +1,30 @@
-# README
+# Instagram
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was a project I revisited from scratch to refresh my Rails.
 
-Things you may want to cover:
+It is a fairly basic rails app with bootstrap styling using the [Paperclip](https://github.com/thoughtbot/paperclip) gem for images and [Factory Girl](https://github.com/thoughtbot/factory_girl) for mocking.
 
-* Ruby version
+## To view locally
 
-* System dependencies
+```bash
+git clone https://github.com/sblausten/instagram-on-rails.git
+cd instagram-on-rails
+bundle i
+rake db:create
+rake db:migrate
+rails server
+```
 
-* Configuration
+Navigate to localhost:3000 in your browser and register as a user.
 
-* Database creation
 
-* Database initialization
+## To run tests
+Do all the above except running the server. Then:
+```bash
+rspec
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If that does not pick up any specs try:
+```bash
+rake spec
+```
