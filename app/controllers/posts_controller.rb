@@ -17,7 +17,7 @@ class PostsController < ApplicationController
       flash[:success] = "Success!"
       redirect_to post_path(@post)
     else
-      flash[:error] = @post.errors.full_messages
+      flash[:alert] = 'You need to add an image.'
       redirect_to new_post_path
     end
   end
