@@ -1,8 +1,7 @@
 
 <% @posts.each do |post|%>
-<div class="white">
-  <%= image_tag(post.image.url(:medium)) %>
-  <br />
-  <%= post.description %>
-</div>
+  <div class="white">
+    <%= render partial: 'post', locals: {post: post}  %>
+    <%= link_to "Edit", edit_post_path(post) %>
+  </div>
 <% end %>

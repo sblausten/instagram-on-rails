@@ -4,6 +4,11 @@ This was a project I revisited from scratch to refresh my Rails.
 
 It is a fairly basic rails app with bootstrap styling using [Devise](https://github.com/plataformatec/devise) for authentication, the [Paperclip](https://github.com/thoughtbot/paperclip) gem for images and [Factory Girl](https://github.com/thoughtbot/factory_girl) for mocking.
 
+Users can do the following:
+- Register, sign in and sign out
+- Post a picture with a caption
+- View a feed of all posts from all Users
+
 ## To view locally
 
 ```bash
