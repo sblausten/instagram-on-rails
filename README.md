@@ -33,3 +33,32 @@ If that does not pick up any specs try:
 ```bash
 rake spec
 ```
+
+## To do
+### Own posts
+- Posts in main feed are labelled with the name of the user who created them
+- A user can see a feed of only their posts
+
+### Like posts
+- A user can 'like' other users' posts
+- A user can only 'like' a post once
+- A user cannot 'like' their own post
+- A user can 'unlike' a post they have liked
+
+### Comments
+- A user can comment on other users' posts
+- Comments appear in all post feeds
+
+### Onboarding
+- A user who is not logged in can view the main feed
+
+### Following
+- A user can view a list of other users
+- A user can search for other users
+- A user can follow other users
+- A user can view a feed of posts from people they follow
+
+### Mobile
+- A user can use less data when viewing images they have already viewed
+- A user can view a number of posts on the main feed while offline
+- A user can like a post while offline
