@@ -2,8 +2,8 @@ require 'rails_helper'
 
 feature 'Edit post' do
   before :each do
-    post = create(:post)
-    login_helper
+    user = login_helper
+    post = create(:post, user: user)
     visit root_path
     click_link("Edit")
   end

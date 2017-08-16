@@ -8,6 +8,7 @@ Users can do the following:
 - Register, sign in and sign out
 - Post a picture with a caption
 - View a feed of all posts from all Users
+- Posts are labelled with the name of the user who created them
 
 ## To view locally
 
@@ -15,9 +16,8 @@ Users can do the following:
 git clone https://github.com/sblausten/instagram-on-rails.git
 cd instagram-on-rails
 bundle i
-rake db:create
-rake db:migrate
-rails server
+rails db:migrate
+rails s
 ```
 
 Navigate to localhost:3000 in your browser and register as a user.
@@ -31,12 +31,11 @@ rspec
 
 If that does not pick up any specs try:
 ```bash
-rake spec
+rails spec
 ```
 
 ## To do
-### Own posts
-- Posts in main feed are labelled with the name of the user who created them
+
 - A user can see a feed of only their posts
 
 ### Like posts
@@ -48,9 +47,6 @@ rake spec
 ### Comments
 - A user can comment on other users' posts
 - Comments appear in all post feeds
-
-### Onboarding
-- A user who is not logged in can view the main feed
 
 ### Following
 - A user can view a list of other users

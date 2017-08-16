@@ -2,4 +2,6 @@
   <%= link_to image_tag(post.image.url(:medium)), post_path(post) %>
   <br />
   <%= post.description %>
+  <br />
+  <%= User.find(post.user_id).user_name %>
 </div>
